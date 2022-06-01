@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="imagem">
+            <img src="./img/download.png" width="300">
+        </div>
+        <div class="flexDirectionRow">
+            <div class="calculadora">
+                <p id="contaAntiga"></p>
+                <p id="visor" >
+                </p> 
+                <table>
+                    <tr>
+                        <td ><button onclick="btnParenteses('esquerdo')" class="single_btn func1"> ( </button></td>
+                        <td ><button onclick="btnParenteses('direito')" class="single_btn func1"> ) </button></td>
+                        <td ><button onclick="btnDel()" class="single_btn func1"> del </button></td>
+                        <td colspan="2" ><button onclick="btnClear()" class="double_btn func1"> clear </button></td>
+                    </tr>
+                    <tr>
+                        <td ><button onclick="tecladoNumerico('7')" class="single_btn number">7</button></td>
+                        <td ><button onclick="tecladoNumerico('8')" class="single_btn number">8</button></td>
+                        <td ><button onclick="tecladoNumerico('9')" class="single_btn number">9</button></td>
+                        <td ><button onclick="btnPorcentagem()" class="single_btn func1">%</button></td>
+                        <td ><button onclick="btnRaiz()" class="single_btn func1 raiz">&radic;</button></td>
+                    </tr>
+                    <tr>
+                        <td ><button onclick="tecladoNumerico('4')" class="single_btn number">4</button></td>
+                        <td ><button onclick="tecladoNumerico('5')" class="single_btn number">5</button></td>
+                        <td ><button onclick="tecladoNumerico('6')" class="single_btn number">6</button></td>
+                        <td ><button onclick="btnMultiplicacao()" class="single_btn func1">x</button></td>
+                        <td ><button onclick="btnDivisao()" class="single_btn func1">/</button></td>
+                    </tr>
+                    <tr>
+                        <td ><button onclick="tecladoNumerico('1')" class="single_btn number">1</button></td>
+                        <td ><button onclick="tecladoNumerico('2')" class="single_btn number">2</button></td>
+                        <td ><button onclick="tecladoNumerico('3')" class="single_btn number">3</button></td>
+                        <td ><button onclick="btnSoma()" class="single_btn func1">+</button></td>
+                        <td ><button onclick="btnSubtracao()" class="single_btn func1">-</button></td>
+                    </tr>
+                    <tr>
+                        <td  colspan="2"><button onclick="tecladoNumerico('0')" class="double_btn  number">0</button></td>
+                        <td ><button onclick="btnPonto()" class="single_btn func1">.</button></td>
+                        <td  colspan="2"><button onclick="btnEnter()" class="double_btn enter">Enter</button></td>
+                    </tr>
+
+                </table>
+            </div>            
+            <div class=""id="historico_contas"> 
+                <p>Histórico</p>
+                <hr>
+                <ul id="historicoAqui">
+                    
+                </ul>
+            </div>
+            <div id="btn_historico"><button id="btnShow" onclick="btnHistorico()">></button></div>
+
+        </div>
+        
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+<footer>
+    <p class="footer_head">Guilherme Inacio - All Right Reserved</p><br>
+
+    <div>
+      <ul>
+        <li class="li-border"><a href="https://www.instagram.com/gui_rezende05/"><img src="/img/menu/menu ig.png"></a></li>
+        <li class="li-border"><a href="https://www.facebook.com/guigarezende/"><img src="/img/menu/menu fb.png"></a></li>
+        <li class="li-border"><a href="https://www.linkedin.com/in/guilherme-rezende-inacio/"><img src="/img/menu/menu in.png"></a></li>
+      </ul>
+      
+    </div>
+</footer>
+</html>

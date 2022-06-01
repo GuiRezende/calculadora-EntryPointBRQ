@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif ;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ebf5ff;
+}
+
+body{
+    background-color: #4d8ac8;
+}
+
+.container{
+    width: 100vw;
+    height: calc(50% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexDirectionRow{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.calculadora{
+    border-radius: 15px;
+    background-color: #ebf5ff;
+    
+}
+
+#historico_contas{
+    display: none;
+}
+
+#btn_historico{
+    display: flex;
+    align-items: center;
+    margin: -15px;
+    z-index: 3;
+}
+
+#btnShow{
+    background-color: #163c5f;
+    border-radius: 50%;
+}
+
+table{
+    padding: 15px;
+    padding-bottom: 30px;
+}
+
+button{
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover{
+    background-color: rgba(1, 35, 85, 0.315);
+    color: #285c8f;
+}
+
+.double_btn{
+    width: 110px;
+}
+
+#visor, #contaAntiga{
+    margin: 35px 20px -5px 20px;
+    padding: 20px;
+    padding-bottom: 5px;
+    height: 15px;
+    background-color: #cce5ff;
+    color: #163c5f;
+    border-radius: 5px;
+    text-align: right;
+}
+
+#contaAntiga{
+    margin-bottom: -40px;
+    padding: 0;
+    color: grey;
+    padding: 5px;
+    font-size: 13px;
+    z-index: 4;
+}
+
+.func1{
+    background-color: #a2d0fa;
+    color:#252f3ab2;
+}
+
+.number{
+    background-color: #cce5ff;
+    color:  #285c8f;
+}
+
+.enter{
+    background-color: #4d8ac8;
+    color: #ebf5ff;
+}
+
+.raiz{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+footer{
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+}
+
+
+li{
+    display: inline;
+    filter:  brightness(0) invert(1);
+    margin: 0px 10px 0px 10px;
+}
+
+.animacaoHistorico{
+    border-radius: 15px;
+    background-color: #ebf5ff;
+    color:#285c8f;
+    margin-left: 5px;
+    text-align: center;
+    animation: historicoContas 3s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+
+}
+
+@keyframes historicoContas {
+    0%{
+        display:none;
+        width: 0px;  
+    } 
+    100%{
+        display: block;
+        width: 300px;
+    }
+}
+
+#historicoAqui li{
+    display: flex;
+    flex-direction: column-reverse;
+    color: #163c5f;
+    background-color:#a2d0fa;
+    margin: 5px;
+    padding: 5px;
+    filter: none;
+    border-radius: 5px;
+}
+
+#historico_contas{
+    position: relative;
+    overflow: hidden;
+    height: 420px;
+}
+
+#historico_contas p{
+    margin: 15px;
+    color: #163c5f;
+}
+
+
+
+
+
+
